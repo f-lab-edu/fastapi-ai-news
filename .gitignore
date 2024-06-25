@@ -1,0 +1,32 @@
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.iml
+.vs/
+.emacs.d/
+*.sublime-project
+*.sublime-workspace
+
+# Cache files
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+dist/
+build/
+.eggs/
+.tox/
+
+# Miscellaneous
+.DS_Store
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
