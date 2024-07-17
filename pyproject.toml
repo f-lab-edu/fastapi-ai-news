@@ -8,7 +8,14 @@ authors = ["KooHyunJung <ghj3160@gmail.com>"]
 python = "^3.11"
 fastapi = "^0.111.0"
 uvicorn = "^0.30.1"
-alembic = "^1.13.1"
+black = "22.3.0"
+isort = "^5.13.2"
+mysql-connector-python = "^9.0.0"
+alembic = "^1.13.2"
+mysql = "^0.0.3"
+sqlalchemy = "^2.0.31"
+pydantic = "^2.8.0"
+openai = "^1.35.13"
 
 [tool.poetry.dev-dependencies]
 
