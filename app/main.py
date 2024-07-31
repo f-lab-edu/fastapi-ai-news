@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 
+from app.api.public import public_router
+
 app = FastAPI()
 
 
