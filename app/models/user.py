@@ -11,7 +11,9 @@ class User(Base):
     id = Column(BigInteger, primary_key=True, index=True)
     username = Column(String(64), nullable=False)
     email = Column(String(100), nullable=False)
-    password_hash = Column(String(128), nullable=False)
+    refresh_token = Column(String(225, nullable=False))
+    expires_at = Column(DateTime, nullable=False, server_default=func.now())
     created_at = Column(DateTime, nullable=False, server_default=func.now())
+    updated_at = Column(DateTime, nullable=False, server_default=func.now())
 
     my_news = relationship("MyNews", back_populates="user")
