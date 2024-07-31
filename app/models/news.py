@@ -13,6 +13,7 @@ class News(Base):
     description = Column(String(255), nullable=False)
     source = Column(String(64), nullable=False)
     url = Column(String(64), nullable=False)
+    url_hash = Column(String(64), nullable=False, index=True)
     created_at = Column(DateTime, nullable=False, server_default=func.now())
 
     my_news = relationship("MyNews", back_populates="news")

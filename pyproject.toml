@@ -16,6 +16,7 @@ mysql = "^0.0.3"
 sqlalchemy = "^2.0.31"
 pydantic = "^2.8.0"
 openai = "^1.35.13"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
 
